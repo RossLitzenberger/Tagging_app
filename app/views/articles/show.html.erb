@@ -1,6 +1,6 @@
 <h1><%= @article.title %></h1>
 <% if @article.image.exists? %>
-    <%= image_tag @article.image.url %><br/>
+  <%= image_tag @article.image.url(:medium) %>
 <% end %>
 <p><%= @article.body %></p>
 <p>
