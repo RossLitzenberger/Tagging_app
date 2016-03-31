@@ -1,0 +1,17 @@
+<h1>Login</h1>
+
+<%= form_tag author_sessions_path, method: :post, class: 'pure-form pure-form-stacked' do %>
+    <div class="field">
+      <%= text_field_tag :username, nil, placeholder: 'Username' %>
+      <br>
+    </div>
+    <div class="field">
+      <%= password_field_tag :password, nil, placeholder: 'Password' %>
+      <br>
+    </div>
+    <div class="actions">
+      <%= submit_tag 'Login', class:'pure-button' %>
+    </div>
+<% end %>
+
+<%= link_to 'Back', articles_path %>
